@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wongsathorn Derochannawong · Resume</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+/* One A4 page. Same palette as the portfolio, used sparingly so it prints well. */
+:root {
+  --ink: #0B2540;
+  --muted: #4B6378;
+  --sky: #52CBFE;
+  --sky-ink: #0A6A94;
+  --orange: #FFB840;
+  --line: #D9E8F2;
+  --f-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body: "Figtree", "Segoe UI", system-ui, sans-serif;
+}
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: #FFFFFF; color: var(--ink); }
+body { font: 400 9.6pt/1.45 var(--f-body); -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { width: 210mm; min-height: 297mm; margin: 0 auto; padding: 14mm 15mm 12mm; position: relative; }
+.page::before { content: ""; position: absolute; inset: 0 0 auto; height: 4mm; background: linear-gradient(90deg, var(--sky) 0 78%, var(--orange) 78% 100%); }
+a { color: inherit; text-decoration: none; }
+p { margin: 0; }
+
+header { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; column-gap: 14pt; padding-bottom: 9pt; border-bottom: 1.5pt solid var(--ink); }
+.head-text { display: grid; gap: 3pt; min-width: 0; }
+.portrait { width: 27mm; height: 27mm; border-radius: 50%; object-fit: cover; object-position: 50% 22%; border: 2pt solid #FFFFFF; box-shadow: 0 0 0 1.5pt var(--sky), 0 0 0 3.5pt color-mix(in srgb, var(--orange) 55%, transparent); }
+h1 { margin: 0; font: 800 25pt/1 var(--f-display); letter-spacing: -0.03em; }
+.role { font: 700 12pt/1.2 var(--f-display); letter-spacing: -0.01em; }
+.role .hl { background: linear-gradient(transparent 55%, var(--orange) 55%, var(--orange) 92%, transparent 92%); padding: 0 2pt; }
+.contact { display: flex; flex-wrap: wrap; gap: 2pt 12pt; margin-top: 4pt; font-size: 9pt; color: var(--muted); }
+.contact a { color: var(--sky-ink); font-weight: 600; }
+
+section { margin-top: 11pt; }
+h2 { margin: 0 0 5pt; font: 700 8.5pt/1 var(--f-body); letter-spacing: .12em; text-transform: uppercase; color: var(--sky-ink); display: flex; align-items: center; gap: 6pt; }
+h2::after { content: ""; flex: 1; height: 1pt; background: var(--line); }
+.summary { font-size: 10pt; }
+
+.job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10pt; }
+h3 { margin: 0; font: 700 11pt/1.25 var(--f-display); letter-spacing: -0.01em; }
+h3 .at { font-weight: 700; color: var(--sky-ink); }
+.where { font-size: 9pt; color: var(--muted); white-space: nowrap; }
+ul { margin: 4pt 0 0; padding-left: 12pt; display: grid; gap: 3pt; }
+li::marker { color: var(--orange); }
+li b { font-weight: 700; }
+.proj + .proj { margin-top: 7pt; }
+.proj h3 a { color: var(--sky-ink); font-size: 9pt; font-weight: 600; font-family: var(--f-body); }
+
+.skills { display: grid; grid-template-columns: 26mm 1fr; gap: 3pt 8pt; }
+.skills dt { font-weight: 700; }
+.skills dd { margin: 0; color: var(--ink); }
+.skills .main { background: linear-gradient(transparent 55%, var(--orange) 55%, var(--orange) 92%, transparent 92%); font-weight: 700; padding: 0 1pt; }
+
+.edu { display: flex; justify-content: space-between; align-items: baseline; gap: 10pt; }
+.edu .gpa { font-weight: 700; }
+
+@media screen {
+  html { background: #E9F4FB; }
+  .page { margin: 24px auto; box-shadow: 0 10px 40px rgba(11, 37, 64, .15); background: #FFFFFF; }
+}
+@media print { .page { margin: 0; } }
+</style>
+</head>
+<body>
+<main class="page">
+  <header>
+    <div class="head-text">
+    <h1>Wongsathorn Derochannawong</h1>
+    <p class="role"><span class="hl">AI Engineer</span> &amp; Backend Developer</p>
+    <p class="contact">
+      <span>Bangkok, Thailand</span>
+      <span>darendianana@gmail.com</span>
+      <span>082-456-7626</span>
+      <a href="https://www.linkedin.com/in/wongsathorn-derochanawong-646b0b22b/">linkedin.com/in/wongsathorn-derochanawong</a>
+      <a href="https://github.com/Miyorina378">github.com/Miyorina378</a>
+      <a href="https://miyorina378.github.io/portfolio/">miyorina378.github.io/portfolio</a>
+    </p>
+    </div>
+    <img class="portrait" src="img/portrait.jpg" alt="Portrait of Wongsathorn Derochannawong" width="600" height="750">
+  </header>
+
+  <section>
+    <h2>Summary</h2>
+    <p class="summary">Computer Engineering graduate (Thammasat University, 2026) who builds backend services in Go with Hexagonal Architecture, and the AI features that run on top of them. Shipped AI security alerts, AI translation for a live four-language corporate website, and a product recommendation chatbot. Clear communicator who breaks large features into small, trackable tasks.</p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="job-head">
+      <h3>Backend Developer Intern <span class="at">· Better Way Group</span></h3>
+      <span class="where">Bangkok, Thailand</span>
+    </div>
+    <ul>
+      <li><b>CyberSecAI, AI security alerts:</b> Connected AI to a network security system so the security team sees threats without digging through logs. Built a dashboard that groups detections by 5 severity levels, source country and hour, ranks the top risks, and tracks bandwidth per protocol. Added AI insights and Spock, a voice assistant that surfaces new alerts and the top 10 risks.</li>
+      <li><b>AI website translation (<a href="https://www.betterway.co.th/">betterway.co.th</a>):</b> Translated the corporate website into Thai, English, Japanese and Chinese with Gemini 2.5 Flash. The Go backend stores translations in MySQL, so pages load without calling the AI on every visit.</li>
+      <li><b>Product recommendation chatbot:</b> Built Nong Friday, a shopping chatbot that turns a customer's plain-language need (such as "dry lips") into product cards with price, Add to cart and Details buttons.</li>
+      <li><b>B2C back-office:</b> Built the admin website in Go that the team uses to manage the data and operations behind a customer-facing app.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="proj">
+      <h3>Warframe Archive <span class="at">· Personal project</span> <a href="https://warframe-archive.vercel.app/">warframe-archive.vercel.app</a></h3>
+      <ul>
+        <li>Thai-language Warframe fan site with <b>50–100 visitors a week</b>, built with React and Vite and hosted on Vercel.</li>
+        <li>Features an interactive story timeline, a star-chart drop map with search, open-world maps with fishing data, a Prime Resurgence and Baro Ki'Teer tracker, and guides written in Thai.</li>
+      </ul>
+    </div>
+    <div class="proj">
+      <h3>Slave card game</h3>
+      <ul>
+        <li>Digital version of the Thai card game Slave for 4–8 players, with special item cards that change how a round plays out.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Languages</dt><dd><span class="main">Go (main)</span>, Python, TypeScript, JavaScript, Java</dd>
+      <dt>Backend</dt><dd>Gin, Fiber, GORM, Node.js, Express, Django, Flask; REST, WebSocket, JWT, OAuth2</dd>
+      <dt>Architecture</dt><dd>Hexagonal (Ports &amp; Adapters), Clean Architecture, Domain-Driven Design, Microservices</dd>
+      <dt>Data</dt><dd>MySQL, MongoDB, Redis, SQLite, Firebase/Firestore, Prisma, SQLAlchemy, Django ORM</dd>
+      <dt>AI</dt><dd>OpenAI, Claude and Gemini APIs, LangChain/LangGraph, Hugging Face Transformers, RAG, tool calling, Pinecone, Qdrant</dd>
+      <dt>Frontend</dt><dd>React, Next.js, Vue, Nuxt, Tailwind CSS, Vite</dd>
+      <dt>Cloud &amp; DevOps</dt><dd>Docker, AWS, Google Cloud, Vercel, Render, GitHub Actions, Nginx, Linux</dd>
+      <dt>Testing &amp; tools</dt><dd>Go testing/testify, Postman, Swagger/OpenAPI, Git/GitHub, Claude Code</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="edu">
+      <h3>B.Eng. Computer Engineering <span class="at">· Thammasat University</span></h3>
+      <span class="where">Graduated 2026 · <span class="gpa">GPA 3.50 / 4.00</span></span>
+    </div>
+  </section>
+</main>
+</body>
+</html>
